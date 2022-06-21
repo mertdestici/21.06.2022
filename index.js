@@ -22,6 +22,13 @@ app.post('/api/name', (req, res) => {
     res.send('Hello '+body.firstName+' '+body.lastName)
 })
 
+app.get('/api/env', async (req, res) => {
+
+    
+
+    res.send('Hello World')
+})
+
 app.listen(8080, () => {
     console.log('app server is running')
 })
